@@ -1,0 +1,411 @@
+/*styles for desktop*/
+
+body {
+    font-family: "Avenir next", sans-serif ;
+    background-color: white;
+    color: rgb(71, 70, 70);
+    border: 0.1mm solid gray;
+}
+
+/* logo and nav */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+}
+
+.logo-name img {
+    width: 40px;
+}
+
+.logo-name p {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.logo-name span {
+    color: rgb(155, 152, 152);
+}
+
+.navigation {
+    margin-right: 24px;
+}
+
+.list {
+    word-spacing: 8px;
+}
+
+.list span {
+    word-spacing: 0;
+}
+
+.navigation  li {
+    display: inline-flex;
+    font-size: 1.25rem;
+}
+
+
+/*first block with img & text "learn som..."*/
+
+.first {
+    display: flex;
+    align-items: center;
+    background-color: rgb(223, 219, 219);
+}
+
+.images {
+    max-width: 60%;
+}
+
+.marginall {
+    margin: 32px 24px;
+}
+
+.marginup {
+    margin-top: 32px;
+}
+
+.second img {
+    max-width: 100%;
+}
+
+.one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 26%;
+    line-height: 1.2;
+    margin-left: 24px;
+}
+
+.text-block {
+    font-size: 1.5rem;
+}
+
+.text-block h1, .four h2 {
+    margin-bottom: 32px;
+    
+}
+
+.text-block p {
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.button {
+    background-color: gray;
+    line-height: 1.5;
+}
+
+.button p {
+    text-align: center;
+    padding: 8px;
+    color: white;
+    font-weight: normal;
+}
+
+.button p {
+    margin: 0;
+
+}
+
+/* second block w 1 big & 3 smallw imgs */
+
+.second {
+    display: flex;
+}
+
+.three-pictures {
+    width: 40%;
+    border-left: 0.1mm solid rgb(204, 200, 200);
+}
+
+.small-picture {
+    display: flex;
+    border-bottom: 0.1mm solid rgb(204, 200, 200);
+}
+
+.small-picture img {
+    margin: 16px;
+    max-width: 35%;
+    height: fit-content;
+}
+
+#small-picture-one {
+    margin-top: 32px;
+}
+
+.three {
+    background-color: rgb(223, 219, 219);
+}
+
+.small-blocktext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.small-blocktext h1, .small-blocktext p {
+    margin-bottom: 8px;
+}
+
+a {
+    color: rgb(52, 141, 214);
+    text-decoration: none;
+}
+
+.text-big {
+    font-size: 1.9rem;
+    color: rgb(53, 53, 53);
+}
+
+.text-hurt h1, .four h2 {
+    margin: 32px 0 24px 0;
+}
+
+.text-hurt p {
+    font-weight: normal;
+}
+
+/* third block w 6 pics */
+
+.third {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(223, 219, 219);
+}
+
+.text-low {
+    margin-bottom: 32px;
+}
+
+.block-three h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.six-pics {
+    margin: 0 72px 32px 72px;
+}
+
+.midpic-line {
+    display: flex;
+}
+
+.midpic {
+    background-color: white;
+    margin-top: 32px;
+    width: 100%;
+}
+
+.midpic-slave {
+    margin-left: 32px;
+}
+
+.midpic img {
+    width: 100%;
+    height: auto;
+}
+
+.midpic-text {
+    margin: 16px 16px 24px 16px;
+    font-size: 1.3rem;
+}
+
+.midpic-text-p {
+    margin: 8px 0px;
+}
+
+/* block 4 w video n 2 small pics */
+
+.four {
+    display: flex;
+    background-color: white;
+}
+
+.text-center {
+    margin-top: 32px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.four video {
+    max-width: 100%;
+}
+
+.special {
+    display: flex;
+}
+
+.vid {
+    max-width: 60%;
+}
+
+.two-pictures {
+    margin-top: 32px;
+    width: 40%;
+}
+
+.two-pictures .small-picture {
+    border: none;
+}
+
+/* footer */
+
+footer {
+    border-top: 0.1mm solid rgb(204, 200, 200);
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    margin: 16px 24px;
+}
+
+
+
+.foot li {
+    display: inline-flex;
+}
+
+/* hiding mobile elements */
+
+@media only screen and (min-width:481px) {
+    .mobile {
+        display: none;
+    }
+}
+
+/*styles for mobile*/
+
+@media only screen and (max-width:480px)  {
+
+    /* hiding desktop elements */
+
+    .desktop {
+        display: none;   
+    }
+
+    /* logo and nav */
+
+    .logo-name {
+        display: contents;
+    }
+
+    .logo-name img {
+        margin: 0 24px;
+    }
+
+    /* first block */
+    
+    .special {
+        flex-direction: column;
+    }
+
+    .images {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .one {
+        max-width: 100%;
+        margin: 32px 16px;
+
+    }
+
+    /* second block */
+
+    .three-pictures {
+        width: 100%;
+    }
+
+    .small-picture {
+        flex-direction: column;
+        border: 0;
+    }
+
+    .small-picture img {
+        max-width: 100%;
+    }
+
+    .small-blocktext {
+        margin-left: 16px;
+    }
+
+    .three {
+        background-color: transparent;
+        border-bottom: 0.1mm solid rgb(204, 200, 200);
+    }
+
+    .three a {
+        margin-bottom: 32px;
+    }
+
+    /* block 3 */
+
+    .third {
+        display: block;
+        background-color: transparent;
+        border-bottom: 0.1mm solid rgb(204, 200, 200);
+        padding-bottom: 32px;
+    }
+
+    .six-pics {
+        margin: 16px 16px;
+    }
+
+    .midpic {
+        background-color: rgb(223, 219, 219);
+        margin: 0 0 8px 0;
+    }
+
+    .midpic-line {
+        flex-direction: column;
+    }
+
+    .midpic-slave {
+        margin-left: 0;
+    }
+
+    /* block 4 */
+
+    .four {
+        margin-bottom: 24px;
+    }
+
+    .four .marginall {
+        margin: 0;
+    }
+
+    .four .text-center {
+        margin-bottom: 16px;
+    }
+
+    .vid {
+        max-width: 100%;
+        margin-bottom: 24px;
+    }
+
+    /* footer */
+
+    footer {
+        border: 0;
+    }
+
+
+
+
+
+}
